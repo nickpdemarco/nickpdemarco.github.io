@@ -120,20 +120,54 @@ Modules - reusable parts of our design
 .cd-timeline-img.adobe {
   background: #000000;
 }
-
 .cd-timeline-img.adobe img {
-  width: 36px;
-  height: 36px;
-  margin-left: -18px;
-  margin-top: -18px;
+  width: 80%;
+  height: 80%;
+  margin-left: -40%;
+  margin-top: -38%;
+}
+.cd-timeline-img.brown {
+  background:#FFFFFF;
+}
+.cd-timeline-img.brown img {
+  width: 80%;
+  height: 80%;
+  margin-left: -40%;
+  margin-top: -38%;
 }
 
-.cd-timeline-img.cd-movie {
-  background: #c03b44;
+.cd-timeline-img.microsoft {
+  background:#f3f3f3;
 }
-.cd-timeline-img.cd-location {
-  background: #f0ca45;
+
+.cd-timeline-img.microsoft img {
+  width: 60%;
+  height: 60%;
+  margin-left: -30%;
+  margin-top: -30%;
 }
+
+.cd-timeline-img.spotter {
+  background:#F8F8F8;
+}
+
+.cd-timeline-img.spotter img {
+  width: 80%;
+  height: 80%;
+  margin-left: -40%;
+  margin-top: -38%;
+}
+
+.cd-timeline-img.catan {
+  background:#2CAFE5;
+}
+.cd-timeline-img.catan img {
+  width: 70%;
+  height: 70%;
+  margin-left: -35%;
+  margin-top: -33%;
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
     width: 60px;

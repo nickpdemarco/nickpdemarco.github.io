@@ -2,6 +2,10 @@
 
 /* --- General --- */
 
+html {
+  max-zoom: 100%;
+}
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
@@ -43,6 +47,13 @@ hr.small {
   border-color: inherit;
   border-radius: 3px;
 }
+hr.large {
+  max-width: 50%;
+  margin: 15px auto;
+  border-width: 2px;
+  border-color: inherit;
+  border-radius: 3px;
+}
 
 .main-content {
   padding-top: 80px;
@@ -53,6 +64,31 @@ hr.small {
   }
 }
 
+.history-header {
+  padding-top:2%;
+  text-align:center;
+}
+
+.history-now {
+  text-align:center;
+}
+
+.history-now h4 {
+  z-index:100;
+  position:relative;
+  top:40px;
+}
+
+.history-then {
+  z-index:100;
+  padding-bottom:2%;
+  text-align:center;
+}
+
+.history-then h4 {
+  position:relative;
+  top:-30px;
+}
 .main-explain-area {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 15px inherit;
@@ -604,7 +640,17 @@ footer .theme-by {
   }
 }
 
+.resume-download-btn-above {
+  text-align:center;
+  margin-bottom:5%;
+}
+
+.resume-download-btn-below {
+  text-align:center;
+  margin-top:5%;
+}
 /* --- Tables --- */
+
 
 table {
   padding: 0;
