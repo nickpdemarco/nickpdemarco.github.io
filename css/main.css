@@ -12,7 +12,7 @@ body {
   font-size: 18px;
   color: var(--scheme_text);
   position: relative;
-  background: var(--scheme_bg);
+  /*background: var(--scheme_bg);*/
   background-image: url("../img/bg.jpg");
   background-size: cover;
 }
