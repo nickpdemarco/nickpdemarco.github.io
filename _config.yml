@@ -23,7 +23,6 @@ title: Nick DeMarco
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
   Music : "music"
   Resume : "resume"
 # HOW TO DO LISTS
@@ -47,7 +46,7 @@ avatar: "/img/headshot.png"
 author:
   name: Nick DeMarco
   email: "nickpdemarco@gmail.com"
-  facebook: yourname  # eg. daattali
+  facebook: nickpdemarco  # eg. daattali
   github: nickpdemarco    # eg. daattali
   twitter: yourname   # eg. daattali
   reddit: yourname    # eg. daattali
@@ -89,6 +88,12 @@ share-links-active:
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "nickpdemarco.com"  # eg. "deanattali.com/beautiful-jekyll"
+
+collections:
+  events:
+    output: true
+  musicEvents:
+    output: true
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments

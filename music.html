@@ -7,13 +7,31 @@ use-site-title: true
 
 <link rel="stylesheet" href="/css/music.css">
 
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	<h2> The Jim Moses EP</h2>
-  	<div style="float:left; width: 60%; height: 120px; margin: 10px;">  
-		<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3549294295/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://bowdendemarco.bandcamp.com/album/the-jim-moses-ep">The Jim Moses EP by Peter Bowden &amp; Nick DeMarco</a></iframe>
-  	</div>
-  	<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
-  	<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
-</div>
-
-
+{% assign sorted = (site.musicEvents | sort: 'date') | reverse %}
+{% for event in sorted %}
+	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<h2> {{ event.title }}</h2>
+	  	<div style="width: 80%; margin: 10px;">  
+				<iframe style="border: 0; width: {{event.width}}; height: {{event.height}}" src="{{event.source}}" seamless><a href="{{event.outRef}}"></a></iframe>
+				<i class="icon-ok-sign" rel="tooltip" title="Key active" id="blah"></i>
+				<div> 
+					{% if event.roles contains "record" %}
+					<img src="../img/musicIcons/recordicon.png" style="width:7%;" data-toggle="tooltip" data-placement="bottom" title="I recorded this project">
+					{% endif %}
+					{% if event.roles contains "mix" %}
+					<img src="../img/musicIcons/mixicon.png" style="width:7%;" data-toggle="tooltip" data-placement="bottom" title="I mixed this project">
+					{% endif %}
+					{% if event.roles contains "master" %}
+					<img src="../img/musicIcons/mastericon.png" style="width:7%;" data-toggle="tooltip" data-placement="bottom" title="I mastered this project">
+					{% endif %}
+					{% if event.roles contains "drum" %}
+					<img src="../img/musicIcons/drumicon.png" style="width:7%;" data-toggle="tooltip" data-placement="bottom" title="I played drums on this project">
+					{% endif %}
+					{% if event.roles contains "guitar" %}
+					<img src="../img/musicIcons/guitaricon.png" style="width:7%;" data-toggle="tooltip" data-placement="bottom" title="I played guitar on this project">
+					{% endif %}
+				</div>
+	  	</div>
+	  	<p>{{event.text}}</p>
+  </div>
+{% endfor %}

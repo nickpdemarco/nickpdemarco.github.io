@@ -1,10 +1,15 @@
-.music-entry {
+@import url("colorScheme.css");
 
+blockquote footer {
+	padding: 0px 0;
+	margin-top: 0px;
+	border-top: unset;
+	background: unset;
+	color: var(--scheme_alt_text);
 }
 
-.music-entry .music-player {
-}
-
-.music-entry .music-player iframe {
+blockquote p {
+	margin: 0 10;
+	color: var(--scheme_alt_text);
 }
 

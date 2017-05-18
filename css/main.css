@@ -1,3 +1,4 @@
+@import url("colorScheme.css");
 @import url("pygment_highlights.css");
 
 /* --- General --- */
@@ -9,10 +10,11 @@ html {
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
-  color: #404040;
+  color: var(--scheme_text);
   position: relative;
-  /*background: #FFF;*/
-  background: #e9f0f5;
+  background: var(--scheme_bg);
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
 }
 p {
   line-height: 1.5;
@@ -134,7 +136,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #F5F5F5;
+  background: var(--scheme_header);
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -148,14 +150,14 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: #404040;
+  color: var(--scheme_link);
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #0085a1;
+  color: var(--scheme_link_hover);
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -294,14 +296,14 @@ img {
 
 footer {
   padding: 30px 0;
-  background: #F5F5F5;
-  border-top: 1px #EAEAEA solid;
+  background: var(--scheme_footer);
+  border-top: 1px var(--scheme_head_border) solid;
   margin-top: 50px;
   font-size: 14px;
 }
 
 footer a {
-  color: #404040;
+  color: var(--scheme_icon);
 }
 
 footer .list-inline {
