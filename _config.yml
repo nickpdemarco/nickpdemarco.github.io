@@ -16,6 +16,8 @@ baseurl: ""
 # Name of website
 title: Nick DeMarco
 
+share-img:"/img/preview.png"
+
 # Short description of your site
 #description: put this back to add a description
 
