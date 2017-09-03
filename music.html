@@ -14,21 +14,22 @@ use-site-title: true
 	  	<div style="width: 80%; margin: 10px;">  
 				<iframe style="border: 0; width: {{event.width}}; height: {{event.height}}" src="{{event.source}}" seamless><a href="{{event.outRef}}"></a></iframe>
 				<i class="icon-ok-sign" rel="tooltip" title="Key active" id="blah"></i>
-				<div> 
+				<!-- Adding credit labels to each music event-->
+				<div class="role-container"> 
 					{% if event.roles contains "record" %}
-					<img src="../img/musicIcons/recordicon.png" style="width:7%;" data-toggle="tooltip" data-placement="bottom" title="I recorded this project">
+					<img src="../img/musicIcons/recordicon.png" data-toggle="tooltip" data-placement="bottom" title="I recorded this project">
 					{% endif %}
 					{% if event.roles contains "mix" %}
-					<img src="../img/musicIcons/mixicon.png" style="width:7%;" data-toggle="tooltip" data-placement="bottom" title="I mixed this project">
+					<img src="../img/musicIcons/mixicon.png" data-toggle="tooltip" data-placement="bottom" title="I mixed this project">
 					{% endif %}
 					{% if event.roles contains "master" %}
-					<img src="../img/musicIcons/mastericon.png" style="width:7%;" data-toggle="tooltip" data-placement="bottom" title="I mastered this project">
+					<img src="../img/musicIcons/mastericon.png" data-toggle="tooltip" data-placement="bottom" title="I mastered this project">
 					{% endif %}
 					{% if event.roles contains "drum" %}
-					<img src="../img/musicIcons/drumicon.png" style="width:7%;" data-toggle="tooltip" data-placement="bottom" title="I played drums on this project">
+					<img src="../img/musicIcons/drumicon.png" data-toggle="tooltip" data-placement="bottom" title="I played drums on this project">
 					{% endif %}
 					{% if event.roles contains "guitar" %}
-					<img src="../img/musicIcons/guitaricon.png" style="width:7%;" data-toggle="tooltip" data-placement="bottom" title="I played guitar on this project">
+					<img src="../img/musicIcons/guitaricon.png" data-toggle="tooltip" data-placement="bottom" title="I played guitar on this project">
 					{% endif %}
 				</div>
 	  	</div>

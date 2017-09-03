@@ -13,3 +13,6 @@ blockquote p {
 	color: var(--scheme_alt_text);
 }
 
+.role-container img {
+	width: 7%;
+}
