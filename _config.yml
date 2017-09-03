@@ -25,6 +25,7 @@ title: Nick DeMarco
 # List of links in the navigation bar
 navbar-links:
   Music : "music"
+  Voice Acting : "voice"
   Resume : "resume"
 # HOW TO DO LISTS
 #  Resources:
@@ -95,6 +96,8 @@ collections:
   events:
     output: true
   musicEvents:
+    output: true
+  voiceEvents:
     output: true
 
 # --- Misc --- #

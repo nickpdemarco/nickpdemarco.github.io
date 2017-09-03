@@ -1,0 +1,23 @@
+---
+layout: portfolio 
+title: Voice Acting 
+subtitle:  
+use-site-title: true
+---
+
+<link rel="stylesheet" href="/css/music.css">
+
+{% assign sorted = (site.voiceEvents | sort: 'date') | reverse %}
+{% for event in sorted %}
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <h2> {{ event.title }}</h2>
+      <div style="width: 80%; margin: 10px;">
+        {% case event.sourceType %}
+          {% when 'YOUTUBE' %}
+            <iframe width="560" height="315" src="{{ event.source }}" frameborder="0" allowfullscreen></iframe>
+          {% endcase %}
+        <p>{{event.text}}</p>
+      </div>
+  </div>
+{% endfor %}
+
